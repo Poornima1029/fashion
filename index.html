@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionFoundry - Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="FashionFoundry Logo">
+                <span>FashionFoundry</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="learn.html">Learning Hub</a></li>
+                <li><a href="studio.html">Design Studio</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section class="hero-section">
+        <video class="hero-video" autoplay muted loop>
+            <source src="" type="video/mp4">
+        </video>
+        <!-- <div class="overlay-card">
+            <h1 class="slogan">Where Fashion Dreams Begin</h1>
+            <p class="description">Join FashionFoundry, the ultimate platform for aspirants to start their fashion journey.</p>
+        </div> -->
+    </section>
+
+    <!-- Concept Section -->
+    <section class="concept-section">
+        <h2>FashionFoundry Concept</h2>
+        <p>FashionFoundry is the perfect platform for aspirants who want to kickstart their journey in the world of fashion. Whether you're a designer, stylist, or fashion enthusiast, our platform connects you to valuable resources, tutorials, and a vibrant community.</p>
+        <a href="signup.html" class="get-started-btn">Get Started</a>
+    </section>
+    
+
+<!-- Pages Overview Section -->
+<section class="pages-overview">
+    <h2>Explore More</h2>
+    <div class="page-cards">
+        <div class="card">
+            <img src="about.jpg" alt="About Us" class="card-image">
+            <h3>About Us</h3>
+            <p>Learn more about FashionFoundry and its mission.</p>
+            <a href="about.html" class="card-link">View About FashionFoundry</a>
+        </div>
+
+        <div class="card">
+            <img src="learning-hub.jpg" alt="Learning Hub" class="card-image">
+            <h3>Learning Hub</h3>
+            <p>Access tutorials, courses, and resources to improve your skills in the fashion industry.</p>
+            <a href="learn.html" class="card-link">Visit Learning Hub</a>
+        </div>
+
+        <div class="card">
+            <img src="design-studio.jpg" alt="Design Studio" class="card-image">
+            <h3>Design Studio</h3>
+            <p>Bring your fashion ideas to life using the Design Studio tools and resources.</p>
+            <a href="studio.html" class="card-link">Go to Design Studio</a>
+        </div>
+
+        <div class="card">
+            <img src="events.jpg" alt="Events" class="card-image">
+            <h3>Events</h3>
+            <p>Participate in fashion events, competitions, and exhibitions happening on our platform.</p>
+            <a href="events.html" class="card-link">Explore Events</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Masonry Layout Section -->
+<section class="masonry-section">
+    <h2>Featured Fashion Projects</h2>
+    <div class="masonry-grid">
+        <div class="masonry-item">
+            <img src="project1.jpg" alt="Project 1">
+            <div class="item-text">
+                <h3>Modern Streetwear Collection</h3>
+                <p>Designed by Sarah Williams</p>
+            </div>
+        </div>
+        <div class="masonry-item">
+            <img src="project2.jpg" alt="Project 2">
+            <div class="item-text">
+                <h3>Sustainable Couture</h3>
+                <p>Designed by John Davies</p>
+            </div>
+        </div>
+        <div class="masonry-item">
+            <img src="project3.jpg" alt="Project 3">
+            <div class="item-text">
+                <h3>Vintage Revival</h3>
+                <p>Designed by Emily Stone</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Testimonials Section -->
+<section class="testimonials-section">
+    <h2>What Our Community Says</h2>
+    <div class="testimonial">
+        <p>"FashionFoundry helped me kickstart my design career and connect with like-minded fashion enthusiasts!"</p>
+        <h4>- Jessica Reed, Designer</h4>
+    </div>
+    <div class="testimonial">
+        <p>"Thanks to FashionFoundry, I learned new skills and techniques that I now use in my fashion brand."</p>
+        <h4>- Mark Spencer, Fashion Entrepreneur</h4>
+    </div>
+</section>
+
+
+<!-- Newsletter Section -->
+<section class="newsletter-section">
+    <h2>Stay Updated with FashionFoundry</h2>
+    <p>Subscribe to our newsletter for the latest trends, tutorials, and project showcases.</p>
+    <form action="/subscribe" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</section>
+
+   <!-- Footer Section -->
+<footer class="footer-section">
+    <div class="footer-links">
+        <a href="#" id="contactBtn">Contact Us</a>
+        <a href="#" id="privacyBtn">Privacy Policy</a>
+    </div>
+    
+    <!-- Contact Form Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content contact-content">
+            <span class="close">&times;</span>
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+    
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Privacy Policy Modal -->
+    <div id="privacyModal" class="modal">
+        <div class="modal-content privacy-content">
+            <span class="close">&times;</span>
+            <h2>Privacy Policy</h2>
+            <p>At FashionFoundry, we respect your privacy. Here’s how we handle your data:</p>
+            <ul>
+                <li><strong>Data Collection:</strong> We collect your info when you fill out forms or interact with our platform.</li>
+                <li><strong>Usage:</strong> Data helps us improve services, respond to queries, and fulfill requests.</li>
+                <li><strong>Security:</strong> We use advanced security measures to protect your data.</li>
+            </ul>
+            <p>If you have any concerns, feel free to reach out to us.</p>
+        </div>
+    </div>
+    
+    <div class="social-icons">
+        <a href="#"><img style="width: 50px;height: 30px;" src="youtube-icon.png.png" alt="Youtube"></a>
+        <a href="#"><img style="width: 30px;height: 30px;" src="twitter-icon.png" alt="Twitter"></a>
+        <a href="#"><img style="width: 40px;height: 40px;" src="instagram-icon.png" alt="Instagram"></a>
+    </div>
+</footer>
+
+    <script src="home.js"></script>
+</body>
+</html>

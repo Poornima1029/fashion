@@ -1,0 +1,289 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #F0E7E9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #9e6581e0;
+}
+
+.logo {
+  font-family: 'Lobster', cursive;
+  font-size: 2.5rem;
+  color: #040404;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  color: #000000;
+}
+
+
+.content-wrapper {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #efdfee;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.design-tools-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.tool-card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.tool-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tool-card img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.tool-info {
+  flex-grow: 1;
+}
+
+.tool-info h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.tool-info p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.learn-more-btn {
+  display: inline-block;
+  background-color: #9e6581e0;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #7e506a; /* Darker pastel shade on hover */
+  transform: scale(1.05);
+}
+
+.reveal {
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .tool-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tool-card img {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+}
+
+/*moodboard creator*/
+.moodboard-section {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #efdfee;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.moodboard-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  background-color: #FFF;
+  transition: transform 0.3s ease;
+}
+
+.moodboard-card:hover {
+  transform: scale(1.05);
+}
+
+.upload-area {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.upload-area img {
+  margin: 5px;
+}
+.moodboard-card h3 {
+  font-size: 2rem;
+}
+/* 3D Clothing Visualization Section */
+.visualization-section {
+    margin: 60px 0;
+    text-align: center;
+    background-color: #efdfee; /* Soft pastel background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.visualization-section h3 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.visualization-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    position: relative; /* To enable positioning for the hover effect */
+    overflow: hidden; /* Ensures child elements stay within the card */
+}
+
+.clothing-img {
+    width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Added filter for grayscale effect */
+}
+
+.visualization-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.visualization-card:hover .clothing-img {
+    transform: scale(1.1);
+    filter: brightness(90%); /* Slightly darkens the image on hover */
+}
+
+.description {
+    margin-left: 20px;
+    text-align: left;
+    transition: transform 0.3s ease; /* Smooth transition for the description */
+}
+
+.description h4 {
+    font-size: 1.8rem;
+    color: #333;
+    transition: color 0.3s ease; /* Change color on hover */
+}
+
+.description p, .description ul {
+    color: #666;
+    font-size: 1rem;
+    margin: 10px 0 20px;
+    transition: color 0.3s ease; /* Change color on hover */
+}
+
+.description ul {
+    list-style: disc; /* Bullet points for the list */
+    padding-left: 20px; /* Indentation for the list */
+}
+
+.explore-more-btn {
+    display: inline-block;
+    background-color: #9e6581e0; /* Bright accent color */
+    color: #ffffff; /* White text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.explore-more-btn:hover {
+    background-color: #7e506a; /* Darker shade on hover */
+    transform: translateY(-2px);
+}
+
+/* Hover effects for description text */
+.visualization-card:hover .description h4 {
+    color: #7e506a; /* Change to accent color on hover */
+}
+
+.visualization-card:hover .description p,
+.visualization-card:hover .description ul {
+    color: #333; /* Darker text on hover */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #FFF0F5;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #333;
+}

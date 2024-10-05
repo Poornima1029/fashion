@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionFoundry - Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="FashionFoundry Logo">
+                <span>FashionFoundry</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="learn.html">Learning Hub</a></li>
+                <li><a href="studio.html">Design Studio</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="form-container">
+            <div class="form-header">
+                <h2>Create an Account</h2>
+                <p>Join us and start your fashion journey!</p>
+            </div>
+
+            <form id="signup-form">
+                <label for="username">Username</label>
+                <input type="text" id="username" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+
+            <div class="alternative-options">
+                <p>Already have an account? <a href="#" id="login-link">Log In</a></p>
+                <p><a href="#" id="forgot-password-link">Forgot Password?</a></p>
+            </div>
+        </div>
+
+        <!-- Overlay for Login and Forgot Password -->
+        <div class="overlay" id="overlay">
+            <div class="overlay-content" id="login-form">
+                <h2>Log In</h2>
+                <form>
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+
+                    <button type="submit">Log In</button>
+                </form>
+                <p>Don't have an account? <a href="#" id="signup-link">Sign Up</a></p>
+            </div>
+
+            <div class="overlay-content" id="forgot-password-form">
+                <h2>Reset Password</h2>
+                <form>
+                    <label for="reset-email">Email</label>
+                    <input type="email" id="reset-email" required>
+
+                    <button type="submit">Send Reset Link</button>
+                </form>
+                <p><a href="#" id="back-to-login">Back to Log In</a></p>
+            </div>
+        </div>
+    </main>
+    <div class="floating-shape"></div>
+    <div class="floating-shape"></div>
+    <div class="floating-shape"></div>
+    
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 FashionFoundry. All rights reserved.</p>
+    </footer>
+
+    <script src="signup.js"></script>
+</body>
+</html>

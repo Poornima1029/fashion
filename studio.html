@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionFoundry - Design Studio</title>
+    <link rel="stylesheet" href="studio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="FashionFoundry Logo">
+                <span>FashionFoundry</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="learn.html">Learning Hub</a></li>
+                <li><a href="#">Design Studio</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+<section>
+    <h1 style="color: #000000e0; text-align: center; font-size: 2rem;">Design your fashion</h1>
+    <div class="content-wrapper">
+        <section class="design-tools-section">
+          <div class="tool-card reveal">
+            <img src="pattern.png" alt="Tool 1 Image">
+            <div class="tool-info">
+              <h2>Pattern Maker</h2>
+              <p>Create complex and customizable fashion patterns effortlessly using this tool. It's perfect for both beginners and advanced designers looking to bring their ideas to life.</p>
+              <a href="#" class="learn-more-btn">Learn More</a>
+            </div>
+          </div>
+    
+          <div class="tool-card reveal">
+            <div class="tool-info">
+              <h2>Fabric Simulator</h2>
+              <p>This tool allows you to experiment with different fabrics, drape effects, and textures in 3D, ensuring you pick the right material for your designs.</p>
+              <a href="#" class="learn-more-btn">Learn More</a>
+            </div>
+            <img src="tool2.jpg" alt="Tool 2 Image">
+          </div>
+    
+          <div class="tool-card reveal">
+            <img src="tool3.jpg" alt="Tool 3 Image">
+            <div class="tool-info">
+              <h2>Color Palette Generator</h2>
+              <p>Generate unique color combinations that reflect current trends, or create custom palettes for your fashion projects with ease.</p>
+              <a href="#" class="learn-more-btn">Learn More</a>
+            </div>
+          </div>
+    
+          <div class="tool-card reveal">
+            <div class="tool-info">
+              <h2>3D Model Fitter</h2>
+              <p>Visualize your designs on 3D models with precise measurements, ensuring a perfect fit for every size and style.</p>
+              <a href="#" class="learn-more-btn">Learn More</a>
+            </div>
+            <img src="3dmodel (1).png" alt="Tool 4 Image">
+          </div>
+    
+          <div class="tool-card reveal">
+            <img src="tool5.jpg" alt="Tool 5 Image">
+            <div class="tool-info">
+              <h2>Design Collaboration Board</h2>
+              <p>Collaborate with other designers on this interactive board, where you can share ideas, sketches, and feedback in real time.</p>
+              <a href="#" class="learn-more-btn">Learn More</a>
+            </div>
+          </div>
+        </section>
+      </div>
+      </section>
+    
+
+    <!-- Moodboard Creator Section -->
+    <section class="moodboard-section">
+        <div class="moodboard-card">
+            <h3>Create Your Moodboard</h3>
+            <p>Collect your inspirations for designs! Upload images that represent your design ideas, fabric choices, or anything that sparks your creativity.</p>
+            <div class="upload-area" id="upload-area" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+                <p>Drag & Drop images or click to upload</p>
+                <input type="file" id="file-upload" multiple>
+            </div>
+        </div>
+    </section>
+   
+
+    <!-- 3D Clothing Visualization Section -->
+<div class="visualization-section">
+    <h3>3D Clothing Visualization</h3>
+    <div class="visualization-card">
+        <img src="3dfashion.png" alt="3D Visualization" class="clothing-img">
+        <div class="description">
+            <h4>Real-Time 3D Garment Simulation</h4>
+            <p>Explore 3D models and see how your designs come to life with advanced visualization. Our interactive platform allows you to:</p>
+            <ul>
+                <li>Visualize your designs from all angles.</li>
+                <li>Customize colors and patterns in real-time.</li>
+                <li>Understand fit and draping before production.</li>
+                <li>Experience a lifelike simulation of fabric textures.</li>
+            </ul>
+            <p>Bring your creative ideas to life and make informed design decisions.</p>
+            <a href="#" class="explore-more-btn">Explore More</a>
+        </div>
+    </div>
+</div>
+
+ <!-- Footer -->
+ <footer>
+    <p>© 2024 FashionFoundry. All rights reserved.</p>
+</footer>
+
+    <script src="studio.js"></script>
+</body>
+</html>

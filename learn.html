@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionFoundry - Learning Hub</title>
+    <link rel="stylesheet" href="learn.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="FashionFoundry Logo">
+                <span>FashionFoundry</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Learning Hub</a></li>
+                <li><a href="studio.html">Design Studio</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section class="learning-section">
+        <h1>Welcome to the Learning Hub</h1>
+        <p class="intro-text">Your go-to destination to kickstart your journey in fashion. Explore courses, tutorials, and resources tailored for you.</p>
+
+        <!-- Learning Options -->
+        <div class="learning-grid">
+            <div class="learning-card">
+                <img src="tutorial.png" alt="Tutorial">
+                <h3>Step-by-Step Tutorials</h3>
+                <p>Learn the basics of fashion design with hands-on guides that walk you through each step.</p>
+                <a href="#">Explore Tutorials</a>
+            </div>
+
+            <div class="learning-card">
+                <img src="videotutorial.png" alt="Video Lessons">
+                <h3>Video Lessons</h3>
+                <p>Watch industry experts demonstrate key techniques and trends in fashion design.</p>
+                <a href="#">Watch Videos</a>
+            </div>
+
+            <div class="learning-card">
+                <img src="resource.png" alt="Resources">
+                <h3>Resource Library</h3>
+                <p>Download fashion templates, patterns, and color palettes to help you get started.</p>
+                <a href="#">Access Resources</a>
+            </div>
+        </div>
+
+        <!-- Feature Section -->
+        <div class="feature-section">
+            <h2>Expert Masterclasses</h2>
+            <div class="feature-content">
+                <img src="masterclass.png" alt="Masterclass">
+                <div class="feature-text">
+                    <p>Join live or recorded masterclasses led by industry professionals to boost your skills and knowledge.</p>
+                    <a href="#" class="btn">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--Learning pathway section-->
+<section class="learning-pathway">
+    <h2>Track Your Fashion Journey</h2>
+    <div class="pathway-grid">
+        <div class="pathway-step">
+            <h3>Step 1: Beginner</h3>
+            <p>Learn basic skills like sketching and color theory.</p>
+        </div>
+        <div class="pathway-step">
+            <h3>Step 2: Intermediate</h3>
+            <p>Improve your techniques and start working with fabrics.</p>
+        </div>
+        <div class="pathway-step">
+            <h3>Step 3: Advanced</h3>
+            <p>Master the art of fashion design and build your portfolio.</p>
+        </div>
+    </div>
+</section>
+<!--Slideshow-->
+<section class="fashion-trends">
+    <h1>Fashion Trends</h1>
+    <div class="slideshow-container">
+
+        <!-- Slide 1 -->
+        <div class="slide fade">
+            <img src="1.png" alt="Indian Fashion Trend 1" class="slide-image">
+            <div class="text-overlay">
+                <h3>Traditional Saree</h3>
+                <p>A timeless classic, the saree is an epitome of grace. Whether it's silk, cotton, or chiffon, this attire represents elegance and Indian heritage.</p>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide fade">
+            <img src="2.png" alt="Indian Fashion Trend 2" class="slide-image">
+            <div class="text-overlay">
+                <h3>Lehenga Choli</h3>
+                <p>A traditional yet trendy ensemble, the lehenga choli is the go-to outfit for weddings and festive occasions, often featuring intricate embroidery and vibrant colors.</p>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide fade">
+            <img src="3.png" alt="Indian Fashion Trend 3" class="slide-image">
+            <div class="text-overlay">
+                <h3>Kurta with Palazzo</h3>
+                <p>The fusion of traditional kurtas with palazzo pants offers comfort and style, perfect for casual wear as well as semi-formal events.</p>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide fade">
+            <img src="4.png" alt="Indian Fashion Trend 4" class="slide-image">
+            <div class="text-overlay">
+                <h3>Bandhani Prints</h3>
+                <p>Originating from Rajasthan and Gujarat, Bandhani tie-dye prints are vibrant and full of character, widely used in sarees, dupattas, and lehengas.</p>
+            </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="slide fade">
+            <img src="5.png" alt="Indian Fashion Trend 5" class="slide-image">
+            <div class="text-overlay">
+                <h3>Angrakha Style</h3>
+                <p>A crossover style that ties on the side, the Angrakha is inspired by royal attire and is often worn as kurtas or dresses, showcasing fine craftsmanship and luxury.</p>
+            </div>
+        </div>
+
+
+        <!-- Navigation Controls -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 FashionFoundry. All rights reserved.</p>
+    </footer>
+
+    <script src="learn.js"></script>
+</body>
+</html>
